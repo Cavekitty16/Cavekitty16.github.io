@@ -3,3 +3,10 @@ body {
     color: white;
     background-color: #186218;
 }
+
+div { 
+  height:100px;
+  width:100px;
+  background:
+  repeating-linear-gradient( -45deg,#000, #333 1px,#000 1px);
+}
