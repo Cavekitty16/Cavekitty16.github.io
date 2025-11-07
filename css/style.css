@@ -5,6 +5,8 @@ html {
   overflow-y: scroll;
   scrollbar-width: none;
   padding-top: 60px;
+  overflow-x: hidden;
+  height: 100%;
 }
 body {
   font-family: Georgia, "Times New Roman", serif;
