@@ -1,0 +1,130 @@
+<html lang="en" onsubmit="return false;">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CPS 449: Erich Jaster's Home Page</title>
+    <script src="https://udayton-cloud.bitbucket.io/clock.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/webDev.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="main.js"></script>
+    <script src="webDev.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <!-- Introduction -->
+    <div class="header bg-1">
+      <h1 class="title">Erich Jaster</h1>
+      <div class="image-container">
+        <img class="frame" src="images/Painting-Frame.png" alt="Frame" />
+        <img class="portrait" src="images/Portrait.jpg" alt="Portrait" />
+      </div>
+      <h3 class="title">Web Dev Project</h3>
+      <br />
+      <div class="title" id="email" onclick="showhideEmail()">
+        Show my email
+      </div>
+    </div>
+
+    <!-- Fun Stuff -->
+    <div class="card-container">
+      <div class="card">
+        <p>Time</p>
+        <canvas
+          id="analog-clock"
+          width="350"
+          height="350"
+          style="background-color: #f6c299"
+        ></canvas>
+        <div
+          id="mydiv"
+          onclick="document.getElementById('mydiv').innerHTML= 'Clicked time: ' + Date()"
+        >
+          Click here for current time
+        </div>
+        <div id="digit-clock"></div>
+        <script>
+          var canvas = document.getElementById("analog-clock");
+          var ctx = canvas.getContext("2d");
+          var radius = canvas.height / 2;
+          ctx.translate(radius, radius);
+          radius = radius * 0.9;
+          setInterval(drawClock, 1000);
+
+          function drawClock() {
+            drawFace(ctx, radius);
+            drawNumbers(ctx, radius);
+            drawTime(ctx, radius);
+          }
+          function displayTime() {
+            document.getElementById("digit-clock").innerHTML =
+              "Current time: " + new Date();
+          }
+          setInterval(displayTime, 500);
+        </script>
+      </div>
+
+      <div class="card">
+        <p class="card-title">Trivia</p>
+        <form>
+          <input
+            class="card-button"
+            type="button"
+            value="Trivia?"
+            onclick="triviaAPIfetch()"
+          />
+          <div id="trivia"></div>
+          <div id="triviaAnswers"></div>
+          <div id="guessContainer" style="display: none">
+            Your Guess:
+            <input
+              name="guess"
+              onkeyup="console.log('You have pressed a key')"
+              id="guess"
+            />
+            <input
+              class="card-button"
+              type="button"
+              value="Guess?"
+              onclick="triviaGuess()"
+            />
+          </div>
+          <div id="triviaAnswer"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Image Generator -->
+    <div class="section1 align-center">
+      <h3>Image Generator</h3>
+      <input
+        class="button"
+        type="button"
+        value="Generate Cat"
+        onclick="catAPIfetch()"
+      />
+      <div id="cat"></div>
+      <div id="catInfo"></div>
+      <p>
+        Image sourced from
+        <a href="https://api.thecatapi.com">api.thecatapi.com</a>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="Footer">
+      <a href="https://info.flagcounter.com/9I1b"
+        ><img
+          src="https://s05.flagcounter.com/countxl_US/9I1b/bg_FCECC8/txt_6E5A50/border_FCECC8/columns_4/maxflags_12/viewers_0/labels_0/pageviews_1/flags_0/percent_0/"
+          alt="Flag Counter"
+          border="0"
+      /></a>
+    </footer>
+  </body>
+</html>
