@@ -2,10 +2,11 @@ html {
   font-family: Georgia, "Times New Roman", serif;
   background-image: url("/images/bird_pattern.jpg");
   background-repeat: repeat;
+  background-size: auto;
+  overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
   padding-top: 60px;
-  overflow-x: hidden;
   height: 100%;
 }
 body {
