@@ -13,3 +13,10 @@ fetch("nav.html")
     });
   })
   .catch((err) => console.error("Error loading navbar:", err));
+
+fetch("ErichJasterResume2025.docx.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("resume").innerHTML = data;
+  })
+  .catch((err) => console.error("Error loading resume:", err));

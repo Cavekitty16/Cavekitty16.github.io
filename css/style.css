@@ -79,6 +79,11 @@ body::-webkit-scrollbar {
   max-width: 80%;
   margin: auto;
 }
+.section1 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #df7d62;
+}
 
 .header {
   text-align: center;
