@@ -21,18 +21,18 @@
     "Link": "https://ud-game-development-club.itch.io/ailurophobia"
   },
   {
-    "title": "Cheese Game",
-    "description": "Made for a class at the University of Dayton in Fall 2024, A 3D collection fighting game.",
-    "image": "images/Cheese Game Image.png",
-    "tags": ["Unity", "C#", "3D"],
-    "Link": "https://erich-jaster.itch.io/cheese-game"
-  },
-  {
     "title": "Missing In Time",
     "description": "Made for Game Off 2024 Game Jam with the UD Game Development Club, A 3D puzzle game.",
     "image": "images/Missing In Time Image.png",
     "tags": ["Unity", "C#", "3D"],
     "Link": "https://ud-game-development-club.itch.io/missing-in-time"
+  },
+  {
+    "title": "Cheese Game",
+    "description": "Made for a class at the University of Dayton in Fall 2024, A 3D collection fighting game.",
+    "image": "images/Cheese Game Image.png",
+    "tags": ["Unity", "C#", "3D"],
+    "Link": "https://erich-jaster.itch.io/cheese-game"
   },
   {
     "title": "Flappy Bird Remake",
