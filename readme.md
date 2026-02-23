@@ -1,8 +1,12 @@
 TO-DO:
 
-Add Nav Hamburger Menu
-mobile fix
+Universal -
 fix initial active navbar
+Sometimes Nav Bar dissapears
+
+Mobile -
+fix image on mobile
+fix resume on mobile
 
 Justin -
 Protected Email
