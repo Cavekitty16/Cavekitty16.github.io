@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Cheese Game 2",
+    "description": "Personal project, Submitted to the University of Dayton Arcade Jam 2026, A 2D collection platformer game.",
+    "image": "images/Cheese Game 2 Image.png",
+    "tags": ["Godot", "gdscript", "2D"],
+    "Link": "https://erich-jaster.itch.io/cheese-game-2"
+  },
+  {
+    "title": "Milliomare",
+    "description": "Made for the University of Dayton Gambling Jam 2025, A 2D Horse Training and Racing game.",
+    "image": "images/Milliomare Image.png",
+    "tags": ["Yoyoengine", "C", "2D"],
+    "Link": "https://zoogies.itch.io/milliomare"
+  },
+  {
+    "title": "Aluriphobia",
+    "description": "Made for the Isekai Horror Jam 2025, A 2D Horror Story Game.",
+    "image": "images/Ailurophobia Image.png",
+    "tags": ["Yoyoengine", "C", "2D"],
+    "Link": "https://ud-game-development-club.itch.io/ailurophobia"
+  },
+  {
+    "title": "Cheese Game",
+    "description": "Made for a class at the University of Dayton in Fall 2024, A 3D collection fighting game.",
+    "image": "images/Cheese Game Image.png",
+    "tags": ["Unity", "C#", "3D"],
+    "Link": "https://erich-jaster.itch.io/cheese-game"
+  },
+  {
+    "title": "Missing In Time",
+    "description": "Made for Game Off 2024 Game Jam with the UD Game Development Club, A 3D puzzle game.",
+    "image": "images/Missing In Time Image.png",
+    "tags": ["Unity", "C#", "3D"],
+    "Link": "https://ud-game-development-club.itch.io/missing-in-time"
+  },
+  {
+    "title": "Flappy Bird Remake",
+    "description": "Made for a class at the University of Dayton in Fall 2024, A 2D Flappy Bird Remake.",
+    "image": "images/Flappy Bird Image.png",
+    "tags": ["Unity", "C#", "2D"],
+    "Link": "https://erich-jaster.itch.io/flappy-bird-remake"
+  },
+  {
+    "title": "Magik Blok",
+    "description": "Made for a capstone project at New Albany High School.",
+    "image": "images/Magik Blok Image.png",
+    "tags": ["Unity", "C#", "3D"],
+    "Link": "https://erich-jaster.itch.io/magik-blok"
+  }
+]

@@ -59,8 +59,20 @@ body::-webkit-scrollbar {
   background-color: #6e5a50;
   width: 100%;
 }
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title {
+  color: #fcecc8;
+  padding: 14px 16px;
+  font-size: 18px;
+}
+.nav-links {
+  display: flex;
+}
 .nav a {
-  float: left;
   color: #fcecc8;
   padding: 14px 16px;
   text-decoration: none;
@@ -73,6 +85,30 @@ body::-webkit-scrollbar {
 .nav a.active {
   background-color: #ce645e;
   color: #fcecc8;
+}
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fcecc8;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile Mode */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+  }
 }
 
 .header {

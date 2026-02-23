@@ -3,20 +3,21 @@ fetch("nav.html")
   .then((data) => {
     document.getElementById("navbar").innerHTML = data;
 
-    //Highlight active page in nav
+    // Highlight active page
     const links = document.querySelectorAll("#navbar a");
-    const current = window.location.pathname.split("/").pop(); // get current page
+    const current = window.location.pathname.split("/").pop();
     links.forEach((link) => {
       if (link.getAttribute("href") === current) {
         link.classList.add("active");
       }
     });
+
+    // 🔥 Add burger toggle functionality
+    const toggleBtn = document.getElementById("nav-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
   })
   .catch((err) => console.error("Error loading navbar:", err));
-
-fetch("ErichJasterResume2025.docx.html")
-  .then((response) => response.text())
-  .then((data) => {
-    document.getElementById("resume").innerHTML = data;
-  })
-  .catch((err) => console.error("Error loading resume:", err));
