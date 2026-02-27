@@ -47,3 +47,61 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((err) => console.error("Error loading resume:", err));
 });
+
+var shown = false;
+
+function showhideContact() {
+  if (shown) {
+    document.getElementById("button").innerHTML = "Show my Contact Info";
+    var mycontact = null;
+    document.getElementById("contact").innerHTML = mycontact;
+    shown = false;
+  } else {
+    var mycontact =
+    '<br/>' +
+    '<div class="title">' +
+      '<p style="font-weight: bold;">' +
+        'School Email: ' +
+        '<a href="mailto:Jastere1' +
+        '@' +
+        'udayton.edu">Jastere1' +
+        '@' +
+        'udayton.edu</a>' +
+      '</p>' +
+      '<p style="font-weight: bold;">' +
+        'Personal Email: ' +
+        '<a href="mailto:erichjaster' +
+        '@' +
+        'gmail.com">erichjaster' +
+        '@' +
+        'gmail.com</a>' +
+      '</p>' +
+      '<p style="font-weight: bold;">' + 
+      'Phone: ' + 
+      '<a href="tel:614' +
+      '8097373">' +
+      '  (614)' +
+      '  809-7373</a>' +
+      '  </p>' +
+      '<p style="font-weight: bold;">' +
+        'Github: ' +
+        '<a href="https://github.com/Cavekitty16">github.com/Cavekitty16</a>' +
+      '</p>' +
+      '<p style="font-weight: bold;">' +
+        'Itch.io: ' +
+        '<a href="https://erich-jaster.itch.io">erich-jaster.itch.io</a>' +
+      '</p>' +
+      '<p style="font-weight: bold;">' +
+        'Linkedin: ' +
+        '<a href="https://www.linkedin.com/in/erich-jaster">linkedin.com/in/erich-jaster</a>' +
+      '</p>' +
+      '<p style="font-weight: bold;">' +
+        'Letterboxd: ' +
+        '<a href="https://letterboxd.com/Cavekitty/">letterboxd.com/Cavekitty</a>' +
+      '</p>'
+    '</div>';
+    document.getElementById("contact").innerHTML = mycontact;
+    document.getElementById("button").innerHTML = "Hide my Contact Info";
+    shown = true;
+  }
+}
