@@ -1,6 +1,53 @@
+:root {
+  --color-bg-pattern-light: url("/images/bird_pattern.jpg");
+  --color-bg-pattern-dark: url("/images/bird_pattern_dark.jpg");
+
+  --color-cream: #fcecc8;
+  --color-salmon: #df7d62;
+  --color-salmon-dark: #bb544d;
+
+  --color-brown: #6e5a50;
+  --color-brown-alt: #6e5a4f;
+
+  --color-tan: #f4c09a;
+  --color-tan-light: #f6c299;
+
+  --color-border: #967d66;
+  --color-shadow: #584343;
+
+  --color-accent-red: #ce645e;
+
+  --color-bg-section: #977e67;
+  --color-bg-trivia: #dcaa73;
+
+  --main-color: #6e5a50;
+  --foil-color: #fcecc8;
+  --accent-color: #967d66;
+  --second-main-color: #df7d62;
+  --second-foil-color: #f4c09a;
+  --second-accent-color: #bb544d;
+  --strong-color: #ce645e;
+  --shadow-color: #584343;
+  --title-color: #000;
+  --text-color: #1c1f2e;
+  --background-pattern: url("/images/bird_pattern.jpg");
+}
+:root.schema-1 {
+  --main-color: #6e5a50;
+  --foil-color: #fcecc8;
+  --accent-color: #967d66;
+  --second-main-color: #df7d62;
+  --second-foil-color: #df7d62;
+  --second-accent-color: #bb544d;
+  --shadow-color: #584343;
+  --title-color: #000;
+  --text-color: #1c1f2e;
+  --background-pattern: url("/images/bird_pattern.jpg");
+}
+
 html {
   font-family: Georgia, "Times New Roman", serif;
-  background-image: url("/images/bird_pattern.jpg");
+  background-image: var(--background-pattern);
   background-repeat: repeat;
   background-size: auto;
   overflow-x: hidden;
@@ -9,7 +56,8 @@ html {
   padding-top: 60px;
   height: 100%;
 }
-body {
+
+html body {
   font-family: Georgia, "Times New Roman", serif;
   margin: 0;
   padding: 0;
@@ -24,16 +72,16 @@ body::-webkit-scrollbar {
   display: inline-block;
   text-align: center;
   white-space: normal;
-  background-color: #fcecc8;
-  padding: 4 10;
+  background-color: var(--foil-color);
+  padding: 4px 10px;
   border-radius: 10px;
-  border: solid #967d66;
-  box-shadow: 0px 0px 15px #584343;
+  border: solid var(--accent-color);
+  box-shadow: 0px 0px 15px var(--shadow-color);
 }
 
 .button {
-  background-color: #df7d62;
-  color: #fcecc8;
+  background-color: var(--second-main-color);
+  color: var(--foil-color);
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
@@ -43,7 +91,7 @@ body::-webkit-scrollbar {
   font-size: 1em;
 }
 .button:hover {
-  background-color: #bb544d;
+  background-color: var(--second-accent-color);
 }
 
 .align-center {
@@ -56,7 +104,7 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   z-index: 3;
-  background-color: #6e5a50;
+  background-color: var(--main-color);
   width: 100%;
 }
 .nav-header {
@@ -65,7 +113,7 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 .nav-title {
-  color: #fcecc8;
+  color: var(--foil-color);
   padding: 14px 16px;
   font-size: 18px;
 }
@@ -73,30 +121,29 @@ body::-webkit-scrollbar {
   display: flex;
 }
 .nav a {
-  color: #fcecc8;
+  color: var(--foil-color);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 .nav a:hover {
-  background-color: #f4c09a;
-  color: #6e5a50;
+  background-color: var(--second-foil-color);
+  color: var(--main-color);
 }
 .nav a.active {
-  background-color: #ce645e;
-  color: #fcecc8;
+  background-color: var(--strong-color);
+  color: var(--foil-color);
 }
 .nav-toggle {
   display: none;
   font-size: 24px;
   background: none;
   border: none;
-  color: #fcecc8;
+  color: var(--foil-color);
   padding: 14px 16px;
   cursor: pointer;
 }
 
-/* 📱 Mobile Mode */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -116,7 +163,7 @@ body::-webkit-scrollbar {
 }
 
 .bg-1 {
-  background-color: #977e67;
+  background-color: var(--accent-color);
   margin-top: -60px;
   padding-top: 60px;
   padding-bottom: 60px;
